@@ -41,9 +41,6 @@ a:hover{text-decoration: none; cursor:pointer;}
 .bloc-lg{
 	padding:100px 50px;
 }
-.bloc-md{
-	padding:50px;
-}
 .bloc-sm{
 	padding:20px 50px;
 }
@@ -213,6 +210,7 @@ a:hover{text-decoration: none; cursor:pointer;}
 #home-1 h2{
 	font-size: 46px;
 	line-height: 54px;
+	font-family: helvetica;
 }
 #home-1 p{
 	font-size: 20px;
@@ -222,17 +220,7 @@ a:hover{text-decoration: none; cursor:pointer;}
 	font-size: 24px;
 	line-height: 32px;
 }
-#bloc-10 h3{
-	font-family:'Lato';
-	font-size:36px;
-	font-weight:700;
-}
-#bloc-10 p{
-	font-family:'Lato';
-	font-size:18px;
-	font-weight:400;
-}
-#bloc-19 h3{
+#bloc-11 h3{
 	font-size: 24px;
 	line-height: 36px;
 }
@@ -379,13 +367,6 @@ nav .caret{
 /* = Bric adjustment margins
 -------------------------------------------------------------- */
 
-.mg-clear{
-	margin:0;
-}
-.mg-sm{
-	margin-top:10px;
-	margin-bottom:5px;
-}
 .mg-md{
 	margin-top:10px;
 	margin-bottom:20px;
@@ -441,9 +422,6 @@ button{
 .text-center .a-block{
 	text-align:center;
 }
-.pull-right-block{
-	text-align:right;
-}
 
 /* = Icons
 -------------------------------------------------------------- */
@@ -469,26 +447,7 @@ button{
 
 
 
-/* = Lists
--------------------------------------------------------------- */
-.list-horizontal-layout li{
-	float:left;
-	margin:0 10px;
-}
-.list-sp-md li:last-child,.list-sp-lg li:last-child,.list-sp-xl li:last-child{
-	padding-bottom:0;
-}
 
-/* = Panels
--------------------------------------------------------------- */
-.panel{
-	border:0;
-	box-shadow: 0 0 2px rgba(0,0,0,.4);
-}
-.panel-heading, .panel-footer{
-	background-color: inherit;
-	border-color: rgba(0,0,0,.1)!important;
-}
 .panel-sq, .panel-sq .panel-heading, .panel-sq .panel-footer{
 	border-radius:0;
 }
@@ -831,23 +790,14 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .bgc-white-smoke{
 	background-color:#F8F8F8;
 }
-.bgc-white-smoke-2{
-	background-color:#F5F5F5;
-}
 
 /* Text colour styles */
 
 .tc-dark-jungle-green{
 	color:#1d1d1d!important;
 }
-.tc-black{
-	color:#000000!important;
-}
 .tc-olive-drab-7{
 	color:#333333!important;
-}
-.tc-outer-space{
-	color:#47454A!important;
 }
 
 /* Button colour styles */
@@ -869,20 +819,10 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	color:#FFFFFF!important;
 }
 
-/* Icon colour styles */
-
-.icon-pastel-gray{
-	color:#CCCCCC!important;
-	border-color:#CCCCCC!important;
-}
-
 /* Bloc image backgrounds */
 
 .bg-walkway{
 	background-image:url("img/walkway.jpg");
-}
-.bg-golden-gate-overlay{
-	background-image:url("img/golden-gate-overlay.png");
 }
 
 
