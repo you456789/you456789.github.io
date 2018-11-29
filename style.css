@@ -120,57 +120,6 @@ a:hover{text-decoration: none; cursor:pointer;}
 }
 
 
-/* Dark theme */
-
-.d-bloc{
-	color:rgba(255,255,255,.7);
-}
-.d-bloc button:hover{
-	color:rgba(255,255,255,.9);
-}
-.d-bloc .icon-round,.d-bloc .icon-square,.d-bloc .icon-rounded,.d-bloc .icon-semi-rounded-a,.d-bloc .icon-semi-rounded-b{
-	border-color:rgba(255,255,255,.9);
-}
-.d-bloc .divider-h span{
-	border-color:rgba(255,255,255,.2);
-}
-.d-bloc .a-btn,.d-bloc .navbar a,.d-bloc .navbar-brand, .d-bloc a .icon-sm, .d-bloc a .icon-md, .d-bloc a .icon-lg, .d-bloc a .icon-xl, .d-bloc h1 a, .d-bloc h2 a, .d-bloc h3 a, .d-bloc h4 a, .d-bloc h5 a, .d-bloc h6 a, .d-bloc p a{
-	color:rgba(255,255,255,.6);
-}
-.d-bloc .a-btn:hover,.d-bloc .navbar a:hover,.d-bloc .navbar-brand:hover,.d-bloc a:hover .icon-sm, .d-bloc a:hover .icon-md, .d-bloc a:hover .icon-lg, .d-bloc a:hover .icon-xl, .d-bloc h1 a:hover, .d-bloc h2 a:hover, .d-bloc h3 a:hover, .d-bloc h4 a:hover, .d-bloc h5 a:hover, .d-bloc h6 a:hover, .d-bloc p a:hover{
-	color:rgba(255,255,255,1);
-}
-.d-bloc .navbar-toggle .icon-bar{
-	background:rgba(255,255,255,1);
-}
-.d-bloc .btn-wire,.d-bloc .btn-wire:hover{
-	color:rgba(255,255,255,1);
-	border-color:rgba(255,255,255,1);
-}
-.d-bloc .panel{
-	color:rgba(0,0,0,.5);
-}
-.d-bloc .panel button:hover{
-	color:rgba(0,0,0,.7);
-}
-.d-bloc .panel icon{
-	border-color:rgba(0,0,0,.7);
-}
-.d-bloc .panel .divider-h span{
-	border-color:rgba(0,0,0,.1);
-}
-.d-bloc .panel .a-btn{
-	color:rgba(0,0,0,.6);
-}
-.d-bloc .panel .a-btn:hover{
-	color:rgba(0,0,0,1);
-}
-.d-bloc .panel .btn-wire, .d-bloc .panel .btn-wire:hover{
-	color:rgba(0,0,0,.7);
-	border-color:rgba(0,0,0,.3);
-}
-
-
 /* Light theme */
 
 .d-bloc .panel,.l-bloc{
@@ -204,13 +153,22 @@ a:hover{text-decoration: none; cursor:pointer;}
 .voffset{
 	margin-top:30px;
 }
+.voffset-lg{
+	margin-top:80px;
+}
+/* Dividers */
+
+.b-divider{
+	border-top:1px solid rgba(0,0,0,.1);
+	border-bottom:1px solid rgba(0,0,0,.1);
+}
 
 /* Bloc text custom styling */
 
 #home-1 h2{
+	font-family: helvetica;
 	font-size: 46px;
 	line-height: 54px;
-	font-family: helvetica;
 }
 #home-1 p{
 	font-size: 20px;
@@ -220,15 +178,23 @@ a:hover{text-decoration: none; cursor:pointer;}
 	font-size: 24px;
 	line-height: 32px;
 }
-#bloc-11 h3{
+#bloc-9 h3{
+	font-size: 24px;
+	line-height: 32px;
+}
+#bloc-9 p{
+	font-size: 16px;
+	line-height: 24px;
+}
+#bloc-12 h3{
 	font-size: 24px;
 	line-height: 36px;
 }
-#text-1 h3{
+#content-1 h3{
 	font-size: 56px;
 	line-height: 64px;
 }
-#text-1 p{
+#content-1 p{
 	font-size: 20px;
 	line-height: 28px;
 }
@@ -367,6 +333,10 @@ nav .caret{
 /* = Bric adjustment margins
 -------------------------------------------------------------- */
 
+.mg-sm{
+	margin-top:10px;
+	margin-bottom:5px;
+}
 .mg-md{
 	margin-top:10px;
 	margin-bottom:20px;
@@ -374,6 +344,18 @@ nav .caret{
 .mg-lg{
 	margin-top:10px;
 	margin-bottom:40px;
+}
+img.mg-sm,img.mg-md,img.mg-lg{
+	margin-top: 0;
+}
+img.mg-sm{
+	margin-bottom:10px;
+}
+img.mg-md{
+	margin-bottom:30px;
+}
+img.mg-lg{
+	margin-bottom:50px;
 }
 
 /* = Buttons
@@ -778,6 +760,21 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	font-family:"Lato";
 	font-weight:300;
 }
+.blocs-team-title{
+	font-size:50px;
+	font-family:"Lato";
+	font-weight:300;
+}
+.blocs-team-header{
+	font-size:38px;
+	font-family:"Lato";
+	font-weight:300;
+}
+.blocs-team-sub{
+	font-size:18px;
+	font-family:"Lato";
+	font-weight:500;
+}
 
 /* = Colour
 -------------------------------------------------------------- */
@@ -793,11 +790,17 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 
 /* Text colour styles */
 
+.tc-dim-gray{
+	color:#666666!important;
+}
 .tc-dark-jungle-green{
 	color:#1d1d1d!important;
 }
 .tc-olive-drab-7{
 	color:#333333!important;
+}
+.tc-white{
+	color:#ffffff!important;
 }
 
 /* Button colour styles */
@@ -817,6 +820,10 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .btn-pear:hover{
 	background:#a6b639!important;
 	color:#FFFFFF!important;
+}
+.wire-btn-white{
+	color:#ffffff!important;
+	border-color:#ffffff!important;
 }
 
 /* Bloc image backgrounds */
